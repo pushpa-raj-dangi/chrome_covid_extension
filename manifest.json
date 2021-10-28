@@ -1,0 +1,13 @@
+{
+  "name": "Nepal Covid-19 Update",
+  "version": "1.0.0",
+  "icon":"nepal.png",
+  "icons": { "16": "nepal.png",
+    "48": "nepal.png",
+   "128": "nepal.png" },
+  "description": "Get latest information of Nepal Covid19 update",
+  "manifest_version": 2,
+  "browser_action": {
+    "default_popup": "index.html"
+  }
+}

@@ -1,0 +1,105 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>तथ्यांकमा कोभिड - १९ [अपडेट]</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" />
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <style>
+    @import url(https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap&subset=devanagari,latin-ext);
+    .container {
+      font-family:"Poppins",sans-serif;
+      box-shadow: 0px 10px 50px #000;
+      height: auto;
+      padding: 10px;
+    }
+
+.card{
+  border-radius: 0px;
+}
+    .loader {
+      border: 5px solid #f3f3f3;
+      border-radius: 50%;
+      border-top: 5px solid #3498db;
+      width: 50px;
+      height: 50px;
+      -webkit-animation: spin 2s linear infinite;
+      /* Safari */
+      animation: spin 2s linear infinite;
+    }
+
+    /* Safari */
+    @-webkit-keyframes spin {
+      0% {
+        -webkit-transform: rotate(0deg);
+      }
+
+      100% {
+        -webkit-transform: rotate(360deg);
+      }
+    }
+
+    @keyframes spin {
+      0% {
+        transform: rotate(0deg);
+      }
+
+      100% {
+        transform: rotate(360deg);
+      }
+    }
+  </style>
+</head>
+
+<body class="container" style="width: 400px" id="content">
+  <div class="row no-gutters">
+    <div class="col-12 py-4 d-flex align-items-center">
+      <img src="/nepal.png" width="30px">
+      <h3 style="font-weight: bold;margin-top: 25px;
+      margin-left: 20px;">कोभिड - १९ [अपडेट]</h3>
+    </div>
+
+    <div class="col-6  ">
+      <div class="card  text-white bg-primary">
+        <div class="card-header">Active Cases</div>
+        <div class="card-body" id="active">
+          <div class="loader"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-6   ">
+      <div class="card  text-white bg-warning">
+        <div class="card-header">Confirmed Cases</div>
+        <div class="card-body" id="confirmed">
+          <div class="loader"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-6   ">
+      <div class="card  text-white bg-danger">
+        <div class="card-header">Deaths</div>
+        <div class="card-body" id="deaths">
+          <div class="loader"></div>
+        </div>
+      </div>
+    </div>
+    <div class="col-6   ">
+      <div class="card  text-white bg-success">
+        <div class="card-header">Recovered</div>
+        <div class="card-body" id="recover">
+          <div class="loader"></div>
+        </div>
+      </div>
+    </div>
+    <div class="col-12 text-center mt-4">
+      <a target="_blank" href="https://www.pushpadangi.com.np">Designed by pushpa</a>
+    </div>
+  </div>
+  <br />
+</body>
+<script src="script.js"></script>
+
+</html>
